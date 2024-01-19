@@ -12,7 +12,7 @@ public class Ex05 {
 		// 어떤 클래스(person)의 필드를 private로 선언
 		// private 선언된 필드에 접근하는 방법
 		// Person p1 = new Person("홍길동");
-		//The field person.name is not visible 원인? 접근지정자 때문
+		//The field person.name is not visible 원   인? 접근지정자 때문
 		// private 클래스 내에서만 참조(접근) 가능
 		// 같은 패키지 내부라도 참조(접근) 불가
 		//p1.name = "홍길동"; 
