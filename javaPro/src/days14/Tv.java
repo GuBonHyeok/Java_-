@@ -6,8 +6,8 @@ public class Tv {
 	
 	// 멤버변수(필드) : 속성. 클래스 변수는 초기화를 하지 않아도 각 자료형의 초기값으로 초기화 되어있다.
 	public String color; 
-	public boolean power;
-	public int channel;
+	public boolean power = false;
+	public int channel = 0;
 	
 	// 멤버함수(메서드) : 기능
 	public void power() {
