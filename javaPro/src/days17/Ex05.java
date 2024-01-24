@@ -52,7 +52,7 @@ class BoardDAO{
 	//synchronized : 동기화 처리. 누군가 이 객체를 사용하고 있다면 잠기도록
 	public synchronized static BoardDAO getInstance() { 
 				if (boardDAO == null) {
-			boardDAO = new BoardDAO(); //객체가 생성된 적이 			
+			boardDAO = new BoardDAO(); //객체가 생성된 적이 없다면 자기 자신의 객체를 생성		
 		}
 		return boardDAO;
 	}

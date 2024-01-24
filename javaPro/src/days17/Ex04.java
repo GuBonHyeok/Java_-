@@ -21,8 +21,8 @@ public class Ex04 {
 		List list = new ArrayList(); //List가 ArrayList의 부모 클래스이기 때문에 Up casting
 		
 		test(list);
-		test(new ArrayList()); // 자식 객체를 만들어서 부모 클래스의 매개변수로 사용할 수 있음 : new SalesMan();
-		test(new Vector()); //자식 객체를 만들어서 부모 클래스의 매개변수로 사용할 수 있음 : new Regular();
+		test(new ArrayList()); // 자식 객체를 만들어서 부모 클래스의 매개변수로 사용할 수 있음 : 예) new SalesMan();
+		test(new Vector()); //자식 객체를 만들어서 부모 클래스의 매개변수로 사용할 수 있음 : 예 )new Regular();
 
 	} //main
 	//							: Employee emp

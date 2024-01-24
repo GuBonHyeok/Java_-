@@ -13,7 +13,7 @@ public class 문법 {
 		// String.length()					→ String의 총 길이 구하기 String이 "ABCDEF"면 6이다.
 		// String String.concat(); 		→ String과 ()안의 문자열 연결
 		// String String.substring(beginIndex, endIndex) > beginIndex에서부터 endIndex-1까지 잘라서 출력
-		//
+		// String.indexOf					→
 		
 		//
 		// [Integer.xxx]
