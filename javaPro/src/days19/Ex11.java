@@ -53,6 +53,7 @@ public class Ex11 {
 		long time = d.getTime();
 		
 		Date d2 = new Date(time);
+		Date d3 = new Date();
 		System.out.println(d2.toLocaleString());
 		
 		

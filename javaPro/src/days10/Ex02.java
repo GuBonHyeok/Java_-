@@ -55,7 +55,7 @@ public class Ex02 {
 		int dayOfWeek = totalDays % 7;
 		return dayOfWeek;
 	} //getDay
-	private static int getTotalDays(int year, int month, int day) {
+	public static int getTotalDays(int year, int month, int day) {
 		// year 2020, month 5, day 1
 		// 365* 2019(year-1) + 20년 1(31)+2(29)+3(31)+4(30)+1
 		char [] week = {'일','월','화','수','목','금','토'};
@@ -70,25 +70,25 @@ public class Ex02 {
 		totalDays = totalDays*year + month + day;  		
 		switch (totalDays % 7) {
 		case 0:
-			System.out.printf("%d년%d월%일 : %s요일",year, month, week[0]);
+			System.out.printf("%d년%d월%d일 : %s요일",year, month, day,week[0]);
 			break;
 		case 1:
-			System.out.printf("%d년%d월%일 : %s요일",year,month, week[1]);
+			System.out.printf("%d년%d월%d일 : %s요일",year,month, day, week[1]);
 			break;
 		case 2:
-			System.out.printf("%d년%d월%일 : %s요일",year, month, week[2]);
+			System.out.printf("%d년%d월%d일 : %s요일",year, month, day, week[2]);
 			break;
 		case 3:
-			System.out.printf("%d년%d월%일 : %s요일",year, month, week[3]);
+			System.out.printf("%d년%d월%d일 : %s요일",year, month, day, week[3]);
 			break;
 		case 4:
-			System.out.printf("%d년%d월%일 : %s요일",year, month, week[4]);
+			System.out.printf("%d년%d월%d일 : %s요일",year, month, day, week[4]);
 			break;
 		case 5:
-			System.out.printf("%d년%d월%일 : %s요일",year, month, week[5]);
+			System.out.printf("%d년%d월%d일 : %s요일",year, month, day, week[5]);
 			break;
 		case 6:
-			System.out.printf("%d년%d월%일 : %s요일",year, month, week[6]);
+			System.out.printf("%d년%d월%d일 : %s요일",year, month, day, week[6]);
 			break;
 		}
 

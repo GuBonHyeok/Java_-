@@ -11,8 +11,8 @@ import java.util.Date;
 public class Ex11_03 {
 
 	public static void main(String[] args) {
-		int year = 2024;
-		int month = 1;
+		int year = 2023;
+		int month = 8;
 		
 		int lastDay = getLastDay(year, month);
 		int dayOfWeek = getDayOfWeek(year, month, 1);
@@ -20,7 +20,7 @@ public class Ex11_03 {
 		Date start = new Date(year - 1900, month-1, 1); //2023. 8. 1.
 		start.setDate(start.getDate() -dayOfWeek);
 		
-		for (int i = 0; i < 42; i++) { //왜 42개? > 1주일 7일을 6주치를 찍으려고 하기 때문에
+		for (int i = 0; i < 35; i++) { //왜 42개? > 1주일 7일을 6주치를 찍으려고 하기 때문에
 			if (start.getMonth() == month-1) {
 				System.out.printf("[%02d]\t", start.getDate());
 			} else {
@@ -37,7 +37,7 @@ public class Ex11_03 {
 	private static int getLastDay(int year, int month) {
 	      Date d = new Date(year -1900, month , 1 );
 	      int date = d.getDate() - 1;
-	      d.setDate(date); 
+	      d.setDate(date);
 	      return d.getDate();
 	   }
 

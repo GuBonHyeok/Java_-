@@ -11,15 +11,14 @@ import java.util.Arrays;
  */
 public class Ex09_04 {
 
-	public static void main(String[] args) {
-		// 열 갯수 가변 배열. 알파벳은 26개, 숫자는 10개라서 가변으로 주는게 낫다.
+	public static void main(String[] args) {		
 		int [][] counts = new int[3][];      
 		counts[0] = new int[26];
 		counts[1] = new int[26];
 		counts[2] = new int[10];
 
 
-		String fileName = "\\src\\days18\\Ex01.java";      
+		String fileName = "\\src\\days19\\Ex01.java";      
 		String key = "user.dir";
 		String userDir = System.getProperty(key);      
 		String path = String.format("%s%s", userDir, fileName);
@@ -27,36 +26,31 @@ public class Ex09_04 {
 		try (FileReader fr = new FileReader(path); ){
 			int code ;
 			char one ;
-			// read(): EOF   -1 반환
+			
 			while( (code = fr.read() ) != -1 ) {
-				one = (char)code;
-				// System.out.println(one);            
+				one = (char)code;				    
 				if( Character.isUpperCase(one) ) { 
 					counts[0][one - 'A']++;
 				}else if( Character.isLowerCase(one) ) {
 					counts[1][one - 'a']++;
 				}else if (Character.isDigit(one)) {
 					counts[2][one - '0']++;
-				}
-			} // while
-
-			System.out.println( Arrays.toString(counts[0]) );
-			System.out.println( Arrays.toString(counts[1]) );
-			System.out.println( Arrays.toString(counts[2]) );
-
-			for (int i = 0; i < counts.length; i++) { // 행
-				//System.out.println(i==0? "[대문자 출력]": "[소문자 출력]");
+				}//else if
+			} // while		
+			System.out.print(" < 대문자 갯수 그래프 >");
+			for (int i = 0; i < counts.length; i++) {				
 				System.out.println();
+				if (i == 1) System.out.println(" < 소문자 갯수 그래프 >");
+				else if (i == 2) System.out.println(" < 숫자 갯수 그래프 >");
 				for (int j = 0; j < counts[i].length; j++) {
 					System.out.printf("'%c': %s(%d)\n"
 							, i==0?'A'+j:i==1? 'a'+j : '0' +j
 									,  "#".repeat( counts[i][j] ) , counts[i][j]);               
-				}
-			}
-
+				}//for j
+			}//for i
 		} catch (Exception e) {
 			e.printStackTrace();
-		} // try
+		} // try-catch
 
 	} // main
 
