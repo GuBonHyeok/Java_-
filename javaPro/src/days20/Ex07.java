@@ -25,10 +25,10 @@ public class Ex07 {
 		*/
 		
 		// [2]
-		String strDate = "24년 1월 26일 금"; //날짜 형식을 띈 문자열 생성 
+		String strDate = "24년 01월 26일 금"; //날짜 형식을 띈 문자열 생성 
 		// 1) Date d 로 만들기
 		// 2) Calendar c 로 만들기
-		String pattern = "yy년 M월 d일 E";
+		String pattern = "yy년 MM월 d일 E";
 		SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 		try {
 			// String -> Date 타입 변환(파싱)

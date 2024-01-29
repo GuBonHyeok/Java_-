@@ -7,9 +7,7 @@ package days14;
  */
 public class Student {
 	
-	public Student() {
-	
-	}
+	public Student() {	}
 
 	public Student(String name, int kor, int eng, int mat, int tot, double avg, int rank, int wrank) {
 		this.name = name;

@@ -20,8 +20,7 @@ public class Ex09_03 {
 		Object [] objs = mf.parse(output); //output에 있는 값
 		for (Object o : objs) {
 			System.out.println( o );
-		}
-
+		}//for
 
 	} // main
 
