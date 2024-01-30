@@ -23,13 +23,13 @@ public class Ex07 {
 		//String source = "2009-12-30"; //이게 parse 기본 형식.  
 		// 날짜 형식의 문자열 String -> LocalDate 클래스 타입으로 변환하자
 		
-		/*
-		// LocalDate d =  LocalDate.parse(source);
+		
+		//LocalDate d =  LocalDate.parse(source);
 		String pattern = "yyyy년 MM월 dd일";
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern(pattern);
 		LocalDate d = LocalDate.parse(source, dtf);
 		System.out.println(d);
-		*/
+		
 		
 		/*
 		// 이번 달의 마지막 날짜 며칠까지? LocalDate 활용
@@ -54,10 +54,12 @@ public class Ex07 {
 		*/
 		
 		// [3]
+		/*
 		LocalDate d = LocalDate.now();
 		LocalDate lastDay = d.with(TemporalAdjusters.lastDayOfMonth()); // 오늘 날자 d. 를 with로 수정할건데 그달의 마지막 날짜로 수정하겠다는 뜻
 		//Temporal + Adjuster = 시간 상의 + 조정자
 		System.out.println(lastDay);
+		*/
 		
 		// [TemporalAdjuster]
 		// 날짜, 시간을 수정할 때  with(), plus(), minus()
