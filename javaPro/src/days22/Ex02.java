@@ -12,7 +12,7 @@ import lombok.Data;
  * @date 2024. 1. 30.- 오전 10:29:21
  * @subject 이름, 나이 필드를 가진 Person 클래스를 선언하고
    ArrayList 컬렉션 클래스에  Person 객체를 요소로 추가하고 
-   이름으로 오름차순 정렬해서    출력하는 코딩을 하세요 ..  
+   이름으로   정렬해서    출력하는 코딩을 하세요 ..  
  * @content
  */
 public class Ex02 {

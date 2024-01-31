@@ -1,4 +1,4 @@
-package days22;
+ package days22;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -25,7 +25,7 @@ public class Ex10 {
 		
 		ArrayList lottos = new ArrayList(); //하나의 로또 번호로 
 		HashSet lotto = null; //하나의 로또 번호로 
-		for (int i = 0; i < args.length; i++) {
+		for (int i = 0; i < gameNumber; i++) {
 			lotto = new HashSet();
 			fillLotto(lotto);
 			lottos.add(lotto);
@@ -45,7 +45,7 @@ public class Ex10 {
 			System.out.printf(" %d 게임", cnt++);
 			while (ir2.hasNext()) {
 				int n = (int) ir2.next();
-				System.out.printf("[%d] ", n);
+				System.out.printf("[%02d] ", n);
 			}//while
 			System.out.println();
 			

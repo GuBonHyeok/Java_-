@@ -33,6 +33,7 @@ public class Ex04 {
 		//v.add(null);	null도 중복으로 들어가짐. (중복 허용)
 		//v.add(null);
 
+
 		System.out.println(v);
 
 		System.out.println(v.size()); //3 
@@ -42,7 +43,7 @@ public class Ex04 {
 		System.out.println(v.capacity());
 
 		v.setSize(5); //벡터 크기 설정 가능
-		System.out.println(v); //벡터 크기를 5로 설정했고 요소는 3개라 나머지 2자리는 null로 채워진다ㅣ
+		System.out.println(v); //벡터 크기를 5로 설정했고 요소는 3개라 나머지 2자리는 null로 채워진다
 
 		//요소 얻어오는 메서드 : get(), elementAt() 사용
 		String name = (String) v.get(0);

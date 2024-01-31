@@ -31,7 +31,7 @@ public class Ex09 {
 		
 		System.out.println(hs); //중복된 데이터 1이 들어갔기 때문에 1, 9, 10, 15가 나옴. 중복허용 X
 		
-		hs.
+		
 		
 	}//main
 
