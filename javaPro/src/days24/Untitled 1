@@ -1,0 +1,41 @@
+ - 컬렉션 클래스 종류 나열
+   1) Queue (Deque)
+   2) List
+     - ArrayList
+     - LinkedList
+     - Vector
+      - Stack
+   3) Set
+     - HashSet
+     - LinkedHashSet
+     - SortedSet
+       - TreeSet
+   4) Map
+     - HashTable
+     - LinkedHashMap
+     - HashMap
+     - SortedMap
+       - TreeMap
+   
+
+ - HashTable, HashMap
+
+   + HashMap 사 그룹명, 이름, 전화번호 저장
+
+ - TreeSet, TreeMap (+SortedMap)
+
+ - Properties
+
+ - A~Z, a~z, 0~9 ###찍기
+
+ - ArrayList 합/교/차집합 구하기
+ 
+ 합
+ HashSet<Integer> hab = new HashSet<Integer>(a); 
+      hab.addAll(b);
+      System.out.println(hab);
+      
+ 교
+ 
+ Properties p = System.properties
+ 

@@ -37,9 +37,7 @@ public class Ex05_03 {
 		 * TreeSet<Integer> treeSet = Arrays.stream(intArray)
                                   .boxed()
                                   .collect(TreeSet::new, TreeSet::add, TreeSet::addAll);	
-		 */
-		
-		
+		 */		
 
 	} //main
 
