@@ -20,7 +20,7 @@
 			 *  5. 표준 어노테이션
 			 *  	1) @Override : 컴파일러에게 오버라이딩한 메서드임을 알려주는 어노테이션.
 			 *  	2) @SuppressWarnings : 컴파일러의 특정 경고 메시지가 나타나지 않게 사용하는 어노테이션.
-			 *  	3) @Deprecated : 앞으로 없어지는 생성자, 필드, 메서드를 알려주는 뜻. ex) Date
+			 *  	3) @Deprecated : 앞으로 없어지는 생성자, 필드, 메서드를 알려주는 뜻. ex) Date - getDate
 			 *  	4) @FucntionInterface : 함수형 인터페이스를 알려줌
 			 *  	5) @SafeVarargs : 제네릭 타입의 가변 인자에 사용되는 어노테이션
 			 *  	6) @Native : C언어 메서드 -> 자바 코딩으로 사용 "native 메서드" 에서 참조되는 상수 앞에 붙이는 어노테이션

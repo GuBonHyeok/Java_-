@@ -25,7 +25,7 @@ public class Ex10 {
 		// 6) 저장할 파일의 확장자는 .properties 확장자를 사용한다.
 		// 7) store() 오버로딩. : 파일로 저장함
 		//		storeToXML() 
-		// 8) load() 파일 읽어올 때ㅑ
+		// 8) load() 파일 읽어올 때
 
 		// 예) DBMS(오라클) + Java 연동할 때 설정 정보 : DB 연결 설정 정보		
 		String className = "oracle.jdbc.driver.OracleDriver";            

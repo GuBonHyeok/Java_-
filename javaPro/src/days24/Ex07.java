@@ -3,7 +3,7 @@ package days24;
 /**
  * @author Bonggu
  * @date 2024. 2. 1.- 오후 3:55:10
- * @subject 열거형
+ * @subject 열거형 (enums)
  * @content
  */
 public class Ex07 {
